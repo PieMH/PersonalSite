@@ -1,0 +1,46 @@
+body {
+    background-color: lightslategray;
+}
+
+img {
+    border-radius: 100%;
+}
+
+h1 {
+    color: cyan;
+    font-family: Consolas, monospace, sans-serif, bold;
+    text-align: center;
+}
+
+h3 {
+    color: cyan;
+    text-align: center;
+    font-family: Consolas, monospace, sans-serif, bold;
+}
+
+p {
+    text-align: center;
+    flex: auto;
+}
+
+table {
+    text-align: center;
+}
+
+hr {
+    border-style: dotted none none;
+    border-width: 4px;
+    color: midnightblue;
+    horiz-align: center;
+    margin-top: 1.5%;
+    width: 5%;
+}
+
+.links {
+    color: cyan;
+    text-decoration: none;
+}
+
+.links:hover {
+    color: darkgrey;
+}
