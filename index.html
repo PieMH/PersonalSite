@@ -3,31 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <title>Pietro Personal Website</title>
-    <meta name="description" content="Pietro Dondi personal website in plain HTML">
+    <meta name="description" content="Pietro Dondi personal website">
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="html" href="html-src/contacts.html" />
 </head>
 <body>
-    <table cellspacing="5">
-        <tr>
-            <td>
-                <img alt="Pietro Dondi photo" height="180" width="175" src="images/PersonalPhoto.jpg">
-            </td>
-            <td>
-                <h1>Pietro Dondi</h1>
-                <p><em>Android and Ios Developer</em></p>
-                <p><em>Web Developer</em></p>
-                <p><em>VR Tech Lead Developer</em></p>
-            </td>
-        </tr>
-    </table>
-    <hr>
-    <p>
-        <h3><a class="links" href="html-src/contacts.html">Contacts</a></h3>
+    <div id="topDiv">
+        <nav>
+            <ul id="navList">
+                <li class="listElements"><a class="links" href="index.html">Home</a></li>
+                <li class="listElements"><a class="links" href="html-src/contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+        <header id="header">
+            <img id="personalPhoto" alt="Pietro Dondi photo" src="images/PersonalPhoto.jpg">
+            <h1>Hi, I'm Pietro Dondi</h1>
+            <h3>and I am a full-time dreamer</h3>
+            <h5>and in the spare time a VR Developer, Android and Ios Developer and a Web Developer</h5>
+        </header>
+        <main>
+            <section></section>
+        </main>
+    </div>
     <hr>
     <p>
         <h3>Mini Bio</h3>
-        I am a passionate, curios, open-minded and eager to learn new things CS developer.<br>
+        I am a passionate, curios, open-minded and eager to learn new things.<br>
         I am currently working for Reply Spa as a Mobile, Web, and VR Developer.<br>
         I am fluent in Italian and English.<br>
         I love technology, physics, maths, chemistry, biology and history.

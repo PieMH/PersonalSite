@@ -2,10 +2,6 @@ body {
     background-color: lightslategray;
 }
 
-img {
-    border-radius: 100%;
-}
-
 h1 {
     color: cyan;
     font-family: Consolas, monospace, sans-serif, bold;
@@ -14,13 +10,20 @@ h1 {
 
 h3 {
     color: cyan;
-    text-align: center;
     font-family: Consolas, monospace, sans-serif, bold;
+    text-align: center;
+}
+
+h5 {
+    color: cyan;
+    font-family: Consolas, monospace, sans-serif, bold;
+    text-align: center;
 }
 
 p {
-    text-align: center;
-    flex: auto;
+    display: flex;
+    position: absolute;
+    right: 50%;
 }
 
 table {
@@ -39,8 +42,39 @@ hr {
 .links {
     color: cyan;
     text-decoration: none;
+    font-family: Consolas, monospace, sans-serif, bold;
 }
 
 .links:hover {
     color: darkgrey;
+}
+
+.listElements {
+    display: inline-block;
+    width: 80px;           // this is the one responsible for creating a space between the list elements
+}
+
+#topDiv {
+    background-color: lightslategray;
+    margin-top: 0;
+}
+
+#header {
+    text-align: center;
+}
+
+#personalPhoto {
+    border-radius: 100%;
+    text-align: center;
+    height: 180px;
+    width: 175px;
+}
+
+#navList {
+    display: flex;
+    right: 1%;
+    list-style-type: none;
+    flex-direction: row;
+    margin: 1% 1.5%;
+    position: absolute;
 }
