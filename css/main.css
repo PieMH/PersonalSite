@@ -1,16 +1,22 @@
 body {
-    background-color: lightslategray;
+    background-color: #409aac;
     text-align: center;
     font-family: "Segoe UI", cursive, sans-serif;
 }
 
 h1 {
     color: cyan;
-    font-family: Consolas, monospace, sans-serif, bold;
+    /*font-family: Consolas, monospace, sans-serif, bold;*/
+    font-family: 'Nova Script', cursive;
     text-align: center;
 }
 
 h3 {
+    color: cyan;
+    font-family: Consolas, monospace, sans-serif, bold;
+}
+
+h4 {
     color: cyan;
     font-family: Consolas, monospace, sans-serif, bold;
 }
@@ -20,8 +26,19 @@ h5 {
     font-family: Consolas, monospace, sans-serif, bold;
 }
 
+hr {
+    border-style: dotted none none;
+    border-width: 4px;
+    color: midnightblue;
+    horiz-align: center;
+    margin-top: 2%;
+    width: 7%;
+}
+
 p {
-    display: flex;
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto
 }
 
 table {
@@ -29,84 +46,108 @@ table {
     margin: 0 auto;
 }
 
-hr {
-    border-style: dotted none none;
-    border-width: 4px;
-    color: midnightblue;
-    horiz-align: center;
-    margin-top: 1.5%;
-    width: 5%;
+.backgroundImages {
+    position: absolute;
+    top: 20%;
+}
+
+.bottomImages {
+    position: relative;
+    margin-bottom: 0;
 }
 
 .links {
     color: cyan;
     text-decoration: none;
     font-family: Consolas, monospace, sans-serif, bold;
+    display: inline-block;
+    width: 120px;
 }
 
 .links:hover {
     color: darkgrey;
 }
 
-.listElements {
-    display: inline-block;
-    width: 80px;           // this is the one responsible for creating a space between the list elements
-}
-
-.backgroundImages {
-    position: absolute;
-    top: 20%;
-}
-
-#topDiv {
-    background-color: lightslategray;
-    margin-top: 0;
-}
-
-#personalPhoto {
-    border-radius: 100%;
-    text-align: center;
-    height: 180px;
-    width: 175px;
-}
-
-#navList {
-    display: flex;
-    right: 1%;
-    list-style-type: none;
-    flex-direction: row;
-    margin: 1% 1.5%;
-    position: absolute;
-}
-
-/* version 1 */ /*
-#hobbiesList {
-    list-style-type: circle;
-    margin: 0 auto;
-    text-align: left;
-    width: 30%;
-    position: absolute;
-    left: 40%;
-}*/
-/* version 2 */
-#hobbiesList {
-    list-style-type: none;
-    text-align: center;
-    position: absolute;
-    left: 32%;
-}
-
 #cloudImg1 {
     left: 20%;
-    top: 10%
+    top: 10%;
+    height: 40px;
+    width: 120px;
 }
 
 #cloudImg2 {
     right: 20%;
     top: 30%;
+    height: 60px;
+    width: 170px;
 }
 
-#mountainImg {
-    top: +30%;
+#cloudImg3 {
+    left: 10%;
+    top: 70%;
+    height: 30px;
+    width: 100px;
+}
+
+#cloudImg4 {
+    right: 15%;
+    top: 130%;
+    height: 50px;
+    width: 150px;
+}
+
+#cloudImg5 {
+    left: 10%;
+    top: 170%;
+    height: 20px;
+    width: 80px;
+}
+
+#hobbiesList {
+    text-align: center;
+}
+
+#mountainImg1 {
+    bottom: -10%;
     left: -10%;
+    position: absolute;
+}
+
+#mountainImg2 {
+    bottom: +10%;
+    height: 280px;
+    position: absolute;
+    right: 0;
+    width: 420px;
+}
+
+#personalPhoto {
+    border-radius: 100%;
+    height: 180px;
+    text-align: center;
+    width: 175px;
+}
+
+#topDiv {
+    margin-top: 20px;
+}
+
+/* Valid only for Backup.hml */
+nav {
+    display: block;
+    margin: 1% 1%;
+    position: fixed;
+    background-color: rgba(0, 172, 193, 0.4);
+    right: 2%;
+    width: 170px; /* this is the one responsible for creating a space between the list elements */
+}
+
+#nav1 {
+    display: inline-block;
+    width: 80px; /* this is the one responsible for creating a space between the list elements */
+}
+
+#nav2 {
+    display: inline-block;
+    width: 80px; /* this is the one responsible for creating a space between the list elements */
 }
