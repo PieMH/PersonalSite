@@ -131,17 +131,24 @@ table {
 
 #cloudImg3 {
     right: 15%;
-    top: 230%;
-    height: 3.125rem;
-    width: 9.38rem;
+    top: 150%;
+    height: 2.5rem;
+    width: 8rem;
 }
 
 #cloudImg4 {
     left: 15%;
-    top: 250%;
-    height: 1.25rem;
-    width: 5rem;
+    top: 290%;
+    height: 3rem;
+    width: 9rem;
 }
+
+#cloudImg5 {
+    right: 15%;
+    top: 360%;
+    height: 2.2rem;
+    width: 6rem;
+}S
 
 #contactMeButton {
     width: 6.2rem;
