@@ -65,7 +65,7 @@ table {
     margin: 0;
     padding: 0;
     width: 101%;
-    height: 25%;
+    height: 14%;
     position: absolute;
     left: -1%;
 }
@@ -86,7 +86,7 @@ table {
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     display: inline-block;
-    width: 120px;
+    width: 100px;
 }
 
 .links:hover {
@@ -138,17 +138,17 @@ table {
 
 #cloudImg4 {
     left: 15%;
-    top: 290%;
+    top: 300%;
     height: 3rem;
     width: 9rem;
 }
 
 #cloudImg5 {
     right: 15%;
-    top: 360%;
+    top: 420%;
     height: 2.2rem;
     width: 6rem;
-}S
+}
 
 #contactMeButton {
     width: 6.2rem;
