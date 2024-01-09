@@ -42,22 +42,12 @@ p {
     text-align: center;
     display: inline-block;
     margin: 0 auto;
-    width: 40%;
+    width: 80%;
 }
 
 table {
     text-align: center;
     margin: 0 auto;
-}
-
-.backgroundImages {
-    position: absolute;
-    top: 20%;
-}
-
-.bottomImages {
-    position: absolute;
-    bottom: 0;
 }
 
 .bottom-container {
@@ -115,43 +105,74 @@ table {
     bottom: -45%;
 }
 
+.clouds {
+    position: absolute;
+    opacity: 0.35;
+    transition: opacity .5s ease-in-out;
+}
+
+.clouds:hover {
+    opacity: 1.0;
+    transition: opacity .25s ease-in-out;
+}
+
 #cloudImg1 {
-    left: 20%;
-    top: 10%;
+    left: 5%;
+    top: 5%;
     height: 2.5rem;
     width: 7.5rem;
 }
 
 #cloudImg2 {
     right: 15%;
-    top: 30%;
+    top: 33%;
     height: 3.75rem;
     width: 10.63rem;
 }
 
 #cloudImg3 {
-    right: 15%;
-    top: 150%;
-    height: 2.5rem;
-    width: 8rem;
-}
-
-#cloudImg4 {
     left: 15%;
-    top: 300%;
+    top: 80%;
     height: 3rem;
     width: 9rem;
 }
 
-#cloudImg5 {
+#cloudImg4 {
     right: 15%;
-    top: 420%;
+    top: 110%;
+    height: 2.5rem;
+    width: 8rem;
+}
+
+#cloudImg5 {
+    left: 15%;
+    top: 140%;
+    height: 2.2rem;
+    width: 6rem;
+}
+
+#cloudImg6 {
+    right: 15%;
+    top: 170%;
+    height: 3rem;
+    width: 9rem;
+}
+
+#cloudImg7 {
+    left: 15%;
+    top: 190%;
     height: 2.2rem;
     width: 6rem;
 }
 
 #contactMeButton {
     width: 6.2rem;
+    transition: opacity .5s ease-in-out;
+}
+
+#contactMeButton:hover {
+    opacity: 0.5;
+    transition: opacity .25s ease-in-out;
 }
 
 #header {
@@ -163,12 +184,19 @@ table {
     text-align: center;
 }
 
+.mountains {
+    position: fixed;
+    bottom: 0;
+    z-index: 99;
+}
+
 #mountainImg1 {
-    left: -10%;
+    height: 270px;
+    left: 0;
 }
 
 #mountainImg2 {
-    height: 280px;
+    height: 290px;
     right: 0;
     width: 420px;
 }
