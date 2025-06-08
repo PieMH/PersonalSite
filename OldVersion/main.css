@@ -1,0 +1,243 @@
+body {
+    background-color: #409aac;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8rem;
+}
+
+h1 {
+    color: cyan;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+h2 {
+    color: cyan;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+}
+
+h3 {
+    color: cyan;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+}
+
+h4 {
+    color: cyan;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+}
+
+hr {
+    border-style: dotted none none;
+    border-width: 4px;
+    color: darkslateblue;
+    horiz-align: center;
+    margin-top: 2%;
+    width: 7%;
+}
+
+p {
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+    width: 80%;
+}
+
+table {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.bottom-container {
+    background-color: darkslateblue;
+    margin: 0;
+    padding: 0;
+    width: 101%;
+    height: 14%;
+    position: absolute;
+    left: -1%;
+}
+
+.contact-me {
+    padding-bottom: 0;
+    margin-bottom: 3rem;
+}
+
+.icons {
+    height: 3rem;
+    width: 3rem;
+    margin: 0 1rem 0;
+}
+
+.links {
+    color: cyan;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    width: 100px;
+}
+
+.links:hover {
+    color: darkgrey;
+}
+
+.skill-row {
+    display: inline-block;
+    width: 50%;
+}
+
+.socialIcons {
+    height: 3rem;
+    width: 3rem;
+    opacity: 0.5;
+    transition: opacity .8s ease-in-out;
+}
+
+.socialIcons:hover {
+    opacity: 1.0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#bottomLine {
+    position: relative;
+    bottom: -45%;
+}
+
+.clouds {
+    position: absolute;
+    opacity: 0.35;
+    transition: opacity .5s ease-in-out;
+}
+
+.clouds:hover {
+    opacity: 1.0;
+    transition: opacity .25s ease-in-out;
+}
+
+#cloudImg1 {
+    left: 5%;
+    top: 5%;
+    height: 2.5rem;
+    width: 7.5rem;
+}
+
+#cloudImg2 {
+    right: 15%;
+    top: 33%;
+    height: 3.75rem;
+    width: 10.63rem;
+}
+
+#cloudImg3 {
+    left: 15%;
+    top: 80%;
+    height: 3rem;
+    width: 9rem;
+}
+
+#cloudImg4 {
+    right: 15%;
+    top: 110%;
+    height: 2.5rem;
+    width: 8rem;
+}
+
+#cloudImg5 {
+    left: 15%;
+    top: 140%;
+    height: 2.2rem;
+    width: 6rem;
+}
+
+#cloudImg6 {
+    right: 15%;
+    top: 170%;
+    height: 3rem;
+    width: 9rem;
+}
+
+#cloudImg7 {
+    left: 15%;
+    top: 190%;
+    height: 2.2rem;
+    width: 6rem;
+}
+
+#contactMeButton {
+    width: 6.2rem;
+    transition: opacity .5s ease-in-out;
+}
+
+#contactMeButton:hover {
+    opacity: 0.5;
+    transition: opacity .25s ease-in-out;
+}
+
+#header {
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+#hobbiesList {
+    text-align: center;
+}
+
+.mountains {
+    position: fixed;
+    bottom: 0;
+    z-index: 99;
+}
+
+#mountainImg1 {
+    height: 270px;
+    left: 0;
+}
+
+#mountainImg2 {
+    height: 290px;
+    right: 0;
+    width: 420px;
+}
+
+#personalPhoto {
+    border-radius: 100%;
+    height: 180px;
+    text-align: center;
+    width: 175px;
+}
+
+#social {
+    position: relative;
+    top: +20%;
+}
+
+#title {
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+#topDiv {
+    margin-top: 20px;
+}
+
+/* Valid only for Backup.hml */
+nav {
+    display: block;
+    margin: 1% 1%;
+    position: fixed;
+    background-color: rgba(0, 172, 193, 0.4);
+    right: 2%;
+    width: 170px; /* this is the one responsible for creating a space between the list elements */
+}
+
+#nav1 {
+    display: inline-block;
+    width: 80px; /* this is the one responsible for creating a space between the list elements */
+}
+
+#nav2 {
+    display: inline-block;
+    width: 80px; /* this is the one responsible for creating a space between the list elements */
+}

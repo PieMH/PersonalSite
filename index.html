@@ -1,146 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta content="text/html" charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pietro Personal Website</title>
-    <meta name="description" content="Pietro Dondi personal website">
-    <link rel="icon" href="images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pietro Dondi - Game Developer</title>
+    <meta name="description" content="Pietro Dondi - Game Developer Portfolio">
     <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header id="header">
-        <img id="personalPhoto" alt="Pietro Dondi photo" src="images/PersonalPhoto.jpg">
-        <h1 id="title"><em>Hi, I'm Pietro Dondi</em></h1>
-        <h2>and I am a full-time dreamer</h2>
-        <h4>and in the spare time a Game Developer, a VR/AR Developer, an Android Developer and a Web Developer</h4>
-    </header>
-    <main>
-        <img class="clouds" id="cloudImg1" alt="cloudImage" src="images/cloud.png">
-        <img class="clouds" id="cloudImg2" alt="cloudImage" src="images/cloud.png">
-        <img class="clouds" id="cloudImg3" alt="cloudImage" src="images/cloud.png">
-        <img class="clouds" id="cloudImg4" alt="cloudImage" src="images/cloud.png">
-        <img class="clouds" id="cloudImg5" alt="cloudImage" src="images/cloud.png">
-        <img class="clouds" id="cloudImg6" alt="cloudImage" src="images/cloud.png">
-        <img class="clouds" id="cloudImg7" alt="cloudImage" src="images/cloud.png">
-    </main>
-    <hr><br>
-    <h1>Mini Bio</h1><br>
-    I am a passionate, curios, open-minded and eager to learn new things.<br>
-    I am currently working for Reply Spa as a Mobile, Web, Game and XR Developer.<br>
-    My mother-tongue is Italian, but I can speak also in English.<br>
-    I love technology, physics, maths, chemistry, biology and history.
-    <hr><br>
-    <h1>Education</h1><br>
-    <p>
-        09/2018 - 03/2022 - University of Rome "La Sapienza", faculty of "Ingegneria Informatica, Informatica e Statistica", department of "Informatica".<br>
-        I have a bachelor's degree in Computer Science. I graduated with a final score of 110/110 cum laude with a final thesis on complex adaptive systems.<br>
+<!-- Progress Bar -->
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- Sound Toggle -->
+<div class="sound-toggle" id="soundToggle" title="Toggle Sound Effects">
+    🔊
+</div>
+
+<!-- Navigation Dots -->
+<div class="nav-levels">
+    <div class="nav-dot active" data-section="hero"></div>
+    <div class="nav-dot" data-section="about"></div>
+    <div class="nav-dot" data-section="projects"></div>
+    <div class="nav-dot" data-section="skills"></div>
+    <div class="nav-dot" data-section="contact"></div>
+</div>
+
+<!-- Animated Background -->
+<div class="bg-animation" id="bgAnimation"></div>
+
+<!-- Hero Section -->
+<section class="hero section" id="hero">
+    <div class="hero-bg"></div>
+    <div class="profile-photo" id="profilePhoto"></div>
+    <h1 class="hero-title">Hi, I'm Pietro Dondi</h1>
+    <h2 class="hero-subtitle">Game Developer & Full-Time Dreamer</h2>
+    <p class="hero-description">
+        Crafting immersive experiences with Unreal Engine 5, VR/AR magic, and endless creativity.
+        Welcome to my interactive web portfolio.
     </p>
-    <hr><br>
-    <h1>Work Experience</h1><br>
-    <table border="1">
-        <thead>
-            <tr>
-                <th>From</th>
-                <th>To</th>
-                <th>Position</th>
-                <th>Company</th>
-                <th>Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>04-2022</td>
-                <td>current</td>
-                <td>Software Developer</td>
-                <td>Ringmaster s.r.l (sub-company of Reply s.p.A.)</td>
-                <td>I have been working in this company for 18 months, and I've already done and learn many things.
-                    I worked on many Android projects, and used a huge variety of frameworks. I learned how to use the Cordova framework for embedding a web app into an Android app.
-                    I used the Android Studio IDE, and I learned how to use the Android SDK. I used the Firebase platform for the backend management.
-                    For another Android project I learned how to use the CameraX library for the camera management, and the MLKit library for recognizing objects in the real world through machine learning.
-                    In the last Android project I learned how to use the ARCore library for enhancing our app with the newest Google augmented reality features.
 
-                    On february 2023 I switched project and since then I am working as a fronted developer, using the Vue framework, for two Italian gaming platforms were we host mini games where people can play to earn money.
+    <!-- Easter Eggs -->
+    <div class="easter-egg" style="top: 40%; left: 10%;" onclick="triggerEasterEgg(1)"></div>
+    <div class="easter-egg" style="top: 125%; right: 15%;" onclick="triggerEasterEgg(2)"></div>
+    <div class="easter-egg" style="top: 245%; left: 20%;" onclick="triggerEasterEgg(3)"></div>
+</section>
 
-                    Meanwhile, I am working on a very important side project inside the company, which is the development of our metaverse, where many 3D and VR video-games are connected together thanks to a strong backend framework.
-                    We are building this huge project with Unreal Engine 5 and in C++.
-                    I am the tech leader of the development of the client side of our application, so I closely follow and guide all my colleagues through the 3D developments of our games but I specialize on developing the VR features of our games.
-                    I really enjoy working as a game developer and I love virtual reality.
-                    Lots of fun and learning have been done here, and I am very proud of my work.
-                    Behold, as new things are coming!
-                </td>
-            </tr>
-            <tr>
-                <td>06-2019</td>
-                <td>09-2019</td>
-                <td>CS Intern</td>
-                <td>I.T.Consulting-EducaSoftware s.r.l</td>
-                <td>I worked as an intern, and I mainly studied the technologies used by the company and its workflows.
-                Also, I managed to create a visual documentation of the main crm software the company has created</td>
-            </tr>
-        </tbody>
-    </table>
-    <hr><br>
-    <div class="skills">
-        <h1>Main Skills</h1><br><br>
-        <div class="skill-row">
-            <img class="icons" src="images/UE5.png" alt="UE5_logo">
-            <img class="icons" src="images/c++.png" alt="C++_logo">
-            <h4>Unreal Engine 5 and C++</h4>
-        </div>
-        <div class="skill-row">
-            <img class="icons" src="images/google-arcore.png" alt="ARCore_logo">
-            <img class="icons" src="images/vr-glasses.png" alt="VR_glasses_logo">
-            <h4>AR with ARCore and VR with OpenXR, OculusVR and WindowsMR</h4>
-        </div>
-        <div class="skill-row">
-            <img class="icons" src="images/java.gif" alt="Java_logo">
-            <img class="icons" src="images/android.png" alt="Android_logo">
-            <h4>Java and Android</h4><br>
-        </div>
-        <div class="skill-row">
-            <img class="icons" src="images/html5.png" alt="HTML5_logo">
-            <img class="icons" src="images/css3.png" alt="CSS3_logo">
-            <h4>HTML5 and CSS3</h4><br>
-        </div>
-        <div class="skill-row">
-            <img class="icons" src="images/javascript.gif" alt="Javascript.gif">
-            <img class="icons" src="images/vue.png" alt="Vue_logo">
-            <h4>Javascript and Vue</h4><br>
-        </div>
-
-    </div>
-    <hr><br>
-    <div id="hobbiesList">
-        <h1>Hobbies</h1><br>
-        <p style="width: 100%;">
-            Hiking<br>
-            Running<br>
-            Motorsport<br>
-            Calisthenics<br>
-            Tabletop Gaming<br>
-            Video Gaming, especially Sim Racing, Open World RPGs and Strategy Games<br>
-            But most importantly: learning how to save the world and help people do that with me
+<!-- About Section -->
+<section class="section" id="about">
+    <h2 class="section-title">Level 1: About Me</h2>
+    <div class="about-content">
+        <p>
+            I'm a passionate, curious, and open-minded developer currently working at Ringmaster Reply as a Game Developer.
+            In my work life I have also covered the roles of Android mobile developer and web developer.
+        </p>
+        <p>
+            I love games in general, from social ones, to table top games to video games. Also passionate about technology, physics, maths, cars, motorsport, and nature.
+            Currently leading the development of LabyrAInth, a game I invented and directed with the help of other twelve colleagues.
         </p>
     </div>
-    <hr><br>
-    <div class="contact-me">
-        <h1>Contacts</h1><br>
-        <p>Feel free to <a class="links" id="contactMeButton" href="mailto:pdondiw@gmail.com">Contact me</a>, or write to me at: pdondiw at gmail dot com.</p>
-    </div>
-</body>
-<footer>
-    <div class="bottom-container">
-        <div id="social">
-            <strong><a class="links" href="https://www.linkedin.com/in/pietro-dondi-53a437202/"><img class="socialIcons" src="images/linkedin.png" alt="MyLinkedin"></a></strong>
-            <strong><a class="links" href="https://github.com/PieMH"><img class="socialIcons" src="images/github.png" alt="MyGithub"></a></strong>
+</section>
+
+<!-- Projects Section -->
+<section class="section" id="projects">
+    <h2 class="section-title">Level 2: Game Projects</h2>
+    <div class="projects-grid">
+        <div class="project-card" onclick="openModal('labyrainth')">
+            <h3 class="project-title">LabyrAInth</h3>
+            <p class="project-description">
+                My main game project that I directed from start to finish.
+                A scifi fps arcade maze runner game to play in VR or on PC, with online leaderboards and various game modes.
+                Now on Steam!
+            </p>
+            <div class="project-tech">
+                <span class="tech-tag">Unreal Engine 5</span>
+                <span class="tech-tag">C++</span>
+                <span class="tech-tag">VR</span>
+                <span class="tech-tag">AI</span>
+            </div>
+        </div>
+
+        <div class="project-card" onclick="openModal('metarace')">
+            <h3 class="project-title">Metarace</h3>
+            <p class="project-description">
+                Ever wanted to watch horse races while riding a horse in VR?
+            </p>
+            <div class="project-tech">
+                <span class="tech-tag">Unreal Engine 5</span>
+                <span class="tech-tag">C++</span>
+                <span class="tech-tag">VR</span>
+                <span class="tech-tag">Crypto & NFTs</span>
+            </div>
+        </div>
+
+        <div class="project-card" onclick="openModal('metaverse')">
+            <h3 class="project-title">Metaverse Platform</h3>
+            <p class="project-description">
+                Contributing on the development of an ambitious metaverse projects where multiple 3D and VR games connect through a unified backend framework.
+            </p>
+            <div class="project-tech">
+                <span class="tech-tag">Unreal Engine 5</span>
+                <span class="tech-tag">C++</span>
+                <span class="tech-tag">VR</span>
+                <span class="tech-tag">Metaverse</span>
+            </div>
+        </div>
+
+        <div class="project-card" onclick="openModal('complex-adaptive-system')">
+            <h3 class="project-title">Complex Adaptive System</h3>
+            <p class="project-description">
+                A computational model of a complex adaptive system, simulating the interactions of multiple AI agents to behave like ants in a nest to study emergent behaviours.
+            </p>
+            <div class="project-tech">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Computational Models</span>
+                <span class="tech-tag">AI</span>
+                <span class="tech-tag">Emergence</span>
+            </div>
+        </div>
+
+        <div class="project-card" onclick="openModal('ostomaze')">
+            <h3 class="project-title">OstoMaze</h3>
+            <p class="project-description">
+                A simple cartoonist dungeon crawler in Unity, made to help children with ostomy to understand their condition through a fun and engaging game.
+            </p>
+            <div class="project-tech">
+                <span class="tech-tag">Unity</span>
+                <span class="tech-tag">C#</span>
+                <span class="tech-tag">Gamification</span>
+                <span class="tech-tag">2D</span>
+            </div>
+        </div>
+
+        <div class="project-card" onclick="openModal('web-portfolio')">
+            <h3 class="project-title">Interactive Portfolio</h3>
+            <p class="project-description">
+                This very portfolio you're viewing - a gamified web experience with interactive elements and responsive design.
+            </p>
+            <div class="project-tech">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Gamification</span>
+            </div>
         </div>
     </div>
-    <img class="mountains" id="mountainImg1" alt="mountainImage" src="images/mountain.png">
-    <img class="mountains" id="mountainImg2" alt="mountainImage" src="images/mountain.png">
-</footer>
+</section>
+
+<!-- Skills Section -->
+<section class="section" id="skills">
+    <h2 class="section-title">Level 3: Skill Progressions</h2>
+    <div class="skills-tree">
+        <div class="skill-node" onclick="levelUpSkill(this, 85)">
+            <span class="skill-icon">🎮</span>
+            <div class="skill-name">Game Development</div>
+            <div class="skill-level">
+                <div class="skill-progress" style="width: 85%;"></div>
+            </div>
+        </div>
+
+        <div class="skill-node" onclick="levelUpSkill(this, 70)">
+            <span class="skill-icon">🥽</span>
+            <div class="skill-name">VR/AR Development</div>
+            <div class="skill-level">
+                <div class="skill-progress" style="width: 70%;"></div>
+            </div>
+        </div>
+
+        <div class="skill-node" onclick="levelUpSkill(this, 80)">
+            <span class="skill-icon">⚙️</span>
+            <div class="skill-name">Unreal Engine 5</div>
+            <div class="skill-level">
+                <div class="skill-progress" style="width: 80%;"></div>
+            </div>
+        </div>
+
+        <div class="skill-node" onclick="levelUpSkill(this, 75)">
+            <span class="skill-icon">💻</span>
+            <div class="skill-name">C++ Programming</div>
+            <div class="skill-level">
+                <div class="skill-progress" style="width: 75%;"></div>
+            </div>
+        </div>
+
+        <div class="skill-node" onclick="levelUpSkill(this, 50)">
+            <span class="skill-icon">📱</span>
+            <div class="skill-name">Android Development</div>
+            <div class="skill-level">
+                <div class="skill-progress" style="width: 50%;"></div>
+            </div>
+        </div>
+
+        <div class="skill-node" onclick="levelUpSkill(this, 60)">
+            <span class="skill-icon">🌐</span>
+            <div class="skill-name">Web Development</div>
+            <div class="skill-level">
+                <div class="skill-progress" style="width: 60%;"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="section" id="contact">
+    <h2 class="section-title">Level 4: Boss Battle - Let's Connect!</h2>
+    <div class="contact-boss">
+        <div class="boss-health">
+            <div class="health-bar" id="bossHealth"></div>
+        </div>
+        <p style="font-size: 1.2rem; margin-bottom: 20px; color: var(--text-gray);">
+            Shoot the following buttons to damage the boss and to get in touch with me!
+            Contact me if you are looking to hire a game developer, or if you want to collaborate on a project, or if you just want to chat about games, technology, or anything else!
+        </p>
+        <div class="contact-buttons">
+            <a href="mailto:pdondiw@gmail.com" class="contact-btn" onclick="damageBoss()">📧 Email Shoot</a>
+            <a href="https://www.linkedin.com/in/pietro-dondi-53a437202/" class="contact-btn" onclick="damageboss()" target="_blank">💼 LinkedIn Strike</a>
+            <a href="https://github.com/PieMH" class="contact-btn" onclick="damageaBoss()" target="_blank">💻 GitHub Combo</a>
+            <a href="https://bold.pro/my/pietro-dondi-online-resume/349r" class="contact-btn" onclick="damageaBoss()" target="_blank">📜 Online Resume Recharge</a>
+            <a href="https://store.steampowered.com/app/3672600/LabyrAInth/" class="contact-btn" onclick="damageaBoss()" target="_blank">🎮 Steam Attack</a>
+        </div>
+    </div>
+</section>
+
+<!-- Project Modal -->
+<div class="modal" id="projectModal">
+    <div class="modal-content">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <h2 class="modal-title" id="modalTitle">Project Title</h2>
+        <div class="modal-media" id="modalMedia">
+            📹 Project Demo Video/Images Will Display Here
+        </div>
+        <p id="modalDescription">Detailed project description will appear here...</p>
+        <div id="modalTech" style="margin-top: 20px;"></div>
+    </div>
+</div>
+
 <script src="main.js"></script>
+</body>
 </html>
