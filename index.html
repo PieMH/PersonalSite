@@ -41,12 +41,14 @@
         Crafting immersive experiences with Unreal Engine 5, VR/AR magic, and endless creativity.
         Welcome to my interactive web portfolio.
     </p>
-
-    <!-- Easter Eggs -->
-    <div class="easter-egg" style="top: 40%; left: 10%;" onclick="triggerEasterEgg(1)"></div>
-    <div class="easter-egg" style="top: 125%; right: 15%;" onclick="triggerEasterEgg(2)"></div>
-    <div class="easter-egg" style="top: 245%; left: 20%;" onclick="triggerEasterEgg(3)"></div>
 </section>
+
+<!-- Easter Eggs -->
+<div class="easter-egg" style="top: 40%; left: 10%; z-index: 10;" onclick="triggerEasterEgg(1)"></div>
+<div class="easter-egg" style="top: 162%; right: 30%; z-index: 10;" onclick="triggerEasterEgg(2)"></div>
+<div class="easter-egg" style="top: 320%; left: 49%; z-index: 10;" onclick="triggerEasterEgg(3)"></div>
+<div class="easter-egg" style="top: 417%; left: 2%; z-index: 10;" onclick="triggerEasterEgg(3)"></div>
+<div class="easter-egg" style="top: 550%; left: 50%; z-index: 10;" onclick="triggerEasterEgg(3)"></div>
 
 <!-- About Section -->
 <section class="section" id="about">
@@ -103,13 +105,11 @@
                 </div>
             </div>
 
-            <div class="project-card" onclick="openModal('metaverse')"
-                style="background-image: url('Assets/PortfolioProjects/Metaverse/Screenshot1.png');">
-                <div class="project-card-overlay">
+            <div class="project-card project-card-bg" onclick="openModal('metaverse')"
+                style="background-image: url('Assets/PortfolioProjects/Metaverse/Screenshot.png');">
+                <div class="card-overlay">
                     <h3 class="project-title">Metaverse Platform</h3>
-                    <p class="project-description">
-                        Contributing on the development of an ambitious metaverse projects where multiple 3D and VR games connect through a unified backend framework.
-                    </p>
+                    <p class="project-description">An ambitious metaverse projects where multiple 3D and VR games connect through a unified backend framework.</p>
                     <div class="project-tech">
                         <span class="tech-tag">Unreal Engine 5</span>
                         <span class="tech-tag">C++</span>
@@ -119,13 +119,11 @@
                 </div>
             </div>
 
-            <div class="project-card" onclick="openModal('complex-adaptive-system')"
-                style="background-image: url('Assets/PortfolioProjects/CAS/Screenshot3.png');">
-                <div class="project-card-overlay">
+            <div class="project-card project-card-bg" onclick="openModal('complex-adaptive-system')"
+                style="background-image: url('Assets/PortfolioProjects/CAS/Screenshot2.png');">
+                <div class="card-overlay">
                     <h3 class="project-title">Complex Adaptive System</h3>
-                    <p class="project-description">
-                        A computational model of a complex adaptive system, simulating the interactions of multiple AI agents to behave like ants in a nest to study emergent behaviours.
-                    </p>
+                    <p class="project-description">A computational model of an ant nest, simulating the interactions of multiple AI agents that behave like ants.</p>
                     <div class="project-tech">
                         <span class="tech-tag">Java</span>
                         <span class="tech-tag">Computational Models</span>
@@ -135,13 +133,11 @@
                 </div>
             </div>
 
-            <div class="project-card" onclick="openModal('ostomaze')"
+            <div class="project-card project-card-bg" onclick="openModal('ostomaze')"
                 style="background-image: url('Assets/PortfolioProjects/OstoMaze/Picture2.png');">
-                <div class="project-card-overlay">
+                <div class="card-overlay">
                     <h3 class="project-title">OstoMaze</h3>
-                    <p class="project-description">
-                        A simple cartoonist dungeon crawler in Unity, made to help children with ostomy to understand their condition through a fun and engaging game.
-                    </p>
+                    <p class="project-description">A pixelart dungeon crawler made with Unity, with the objective to help children with ostomy to learn while having fun.</p>
                     <div class="project-tech">
                         <span class="tech-tag">Unity</span>
                         <span class="tech-tag">C#</span>

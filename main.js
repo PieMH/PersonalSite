@@ -406,7 +406,7 @@ window.addEventListener('click', (e) => {
 // Skill level up system
 function levelUpSkill(skillNode, currentLevel) {
     const progressBar = skillNode.querySelector('.skill-progress');
-    const newLevel = Math.min(currentLevel + 5, 100);
+    const newLevel = Math.min(currentLevel + 10, 100);
 
     progressBar.style.width = newLevel + '%';
 
@@ -488,7 +488,7 @@ function triggerEasterEgg(eggId) {
     event.target.style.display = 'none';
 
     // Special reward for finding all easter eggs
-    if (easterEggsFound >= 3) {
+    if (easterEggsFound >= 5) {
         setTimeout(() => {
             showNotification("🏆 Master Explorer! You found all easter eggs! Here's a bonus animation!");
             triggerBonusAnimation();
@@ -555,7 +555,7 @@ function triggerBonusAnimation() {
 
 // Boss battle system
 function damageBoss() {
-    bossHealth -= 33;
+    bossHealth -= 20;
     if (bossHealth < 0) bossHealth = 0;
 
     const healthBar = document.getElementById('bossHealth');
@@ -581,6 +581,10 @@ function damageBoss() {
 // Add hover effects to interactive elements
 document.addEventListener('DOMContentLoaded', () => {
     // Add hover sound to project cards
+    document.querySelectorAll('.main-project-card').forEach(card => {
+        card.addEventListener('mouseenter', () => playSound('hover'));
+    });
+
     document.querySelectorAll('.project-card').forEach(card => {
         card.addEventListener('mouseenter', () => playSound('hover'));
     });
