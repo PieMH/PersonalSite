@@ -111,173 +111,6 @@ document.getElementById('soundToggle').textContent = soundEnabled ? '🔊' : '�
 playSound('click');
 });
 
-// // Project modal system
-// const projectData = {
-//     'labyrainth': {
-//         title: 'LabyrAInth',
-//         description: `LabyrAInth is a blend of new ideas and technologies put together with some imagination, using Unreal Engine 5 and C++, combining AI with VR, and arcade games with maze exploration.
-//
-//             Features of the game:
-//             • FPS arcade scifi game set in a dark alien world made of labyrinths
-//             • Play solo but participate in online leaderboards thanks to an asynchronous multiplayer system
-//             • For both PC and VR platforms
-//             • Escape the mazes in the shortest time while fighting aliens, avoiding traps and activating powers
-//             • 3 main game modes: offline story, infinite mode, ranked mode
-//
-//             I am the lead developer of this project, responsible for the technical architecture, game mechanics, and VR integration.
-//             I developed this game while working at my current company on other projects as well.
-//             As the game leader I was responsible of managing the team ensuring the overall quality of the game was met.
-//             I have also overlooked the marketing and the community management aspects of the game, ensuring a successful launch and ongoing player engagement.`,
-//         tech: ['Unreal Engine 5', 'C++', 'Blueprint', 'VR', 'AI', 'Steam', 'Team management', 'Community management', 'Marketing']
-//     },
-//     'metarace': {
-//         title: 'Metarace',
-//         description: `Worked on a horse racing betting game for web3 platforms.
-//
-//                 Features of the game:
-//                 • Horse racing betting game in 3D within a metaverse environment
-//                 • Oculus VR, OpenXR and Windows Mixed Reality integration
-//                 • Real-time multiplayer betting system with support for cryptocurrencies
-//                 • Customizable horses and tracks
-//                 • Support for NFTs and in-game purchases
-//                 • Stylized low poly art style with a focus on performance and accessibility
-//
-//                 This project was developed as a proof of concept for a potential client, showcasing my ability to create engaging and immersive experiences in the metaverse space.`,
-//         tech: ['Unreal Engine 5', 'C++', 'OpenXR', 'OculusVR', 'WindowsMR', 'Betting games', 'Web3', 'Cryptocurrencies & NFTs']
-//     },
-//     'metaverse': {
-//     title: 'Metaverse Platform',
-//     description: `An ambitious project that aimed to create a unified metaverse platform integrating multiple 3D online games into a single ecosystem.
-//
-//                 Key Features:
-//                 • Multi-game integration with shared user profiles
-//                 • Advanced VR interaction systems
-//                 • Real-time multiplayer capabilities
-//                 • Cross-platform compatibility
-//                 • Dynamic world generation
-//                 • Web3 integration for in-game economies
-//
-//                 I contributed to the development of the VR features of the metaverse, focusing on user interaction and adapting UI interaction in VR.
-//                 I also worked on one of the games integrated into the metaverse, a 3D chess games built in Unreal Engine with real time multiplayer matches and a custom chess engine with support for AI opponents.`,
-//     tech: ['Unreal Engine 5', 'C++', 'VR', 'Multiplayer Networking', 'Metaverse', 'Web3', 'Chess 3D']
-//     },
-//     'complex-adaptive-system': {
-//     title: 'Complex Adaptive System and Computational Models',
-//     description: `Project for my thesis program at University "Sapienza" of Rome, awarded with top grades.
-//
-//                 Technical Implementation:
-//                 • Java computational model simulating ant behaviors
-//                 • genetic AI algorithms for ants reproductions
-//                 • Data visualization and analysis of ant emergent behaviors
-//                 • Intuitive and interactive user interface design
-//
-//                 This project was backed by intensive studies on complex adaptive systems and especially social complex adaptive systems, and how they can be modeled using computational models.
-//                 The Java application simulates an ant nest where multiple simple AI agents that behave like ants interact with each other and with the environment, creating complex behaviors and emergent patterns not encoded in the system.`,
-//     tech: ['Java', 'AI', 'UI', 'Emergence', 'Complex Adaptive Systems', 'Data analysis', 'Genetic Algorithms']
-//     },
-//     'ostomaze': {
-//     title: 'OstoMaze',
-//     description: `OstoMaze is a simple game I developed for a university project, with two other colleagues, where the goal is to navigate a dungeon while avoiding obstacles and collecting items, that help the character with ostomy to be stronger and gain confidence in itself.
-//
-//                 Features of the game:
-//                 • A 2D dungeon crawler game with a top-down view
-//                 • Minimalistic RPG mechanics with a focus on exploration and item collection
-//                 • Educational elements about ostomy care and confidence building
-//                 • Simple yet engaging gameplay mechanics
-//                 • Pixelart graphics with a focus on accessibility and inclusivity
-//
-//                 This was my first ever experience in building and designing a video game. I came up with the idea of the game and designed the mechanics, while my colleagues worked on the graphics and animation.
-//                 I was responsible for the sound design, the SFX and VFX of the game and for the level design of the dungeons.
-//                 An italian hospital overlooked the competition between multiple teams and awarded us with a prize for the best game, as it was the most fun and easy to play game for little children with ostomy.`,
-//     tech: ['Unity', 'C#', '2D Game Development', 'Pixelart', 'Sound Design', 'Level Design', 'Educational Games', 'Gamification']
-//     },
-//     'web-portfolio': {
-//     title: 'Interactive Web Portfolio',
-//     description: `This very portfolio you're currently viewing represents a gamified approach to web development, featuring interactive elements, animations, and responsive design.
-//
-//                 Technical Features:
-//                 • Pure CSS animations and transitions
-//                 • JavaScript-based particle systems
-//                 • Responsiveness and device adaptability
-//                 • Gamified user interactions with sound effects and visual feedback
-//
-//                 A fun little project I made to showcase also my web development skills I gained in my current work at Ringmaster.`,
-//     tech: ['HTML5', 'CSS3', 'JavaScript', 'Responsive Design', 'Animations', 'Web APIs', 'Gamification', 'Web Development']
-//     }
-// };
-
-// function openModal(projectId) {
-//     const modal = document.getElementById('projectModal');
-//     const project = projectData[projectId];
-//
-//     document.getElementById('modalTitle').textContent = project.title;
-//     document.getElementById('modalDescription').innerHTML = project.description.replace(/\n/g, '<br>');
-//
-//     const techContainer = document.getElementById('modalTech');
-//     techContainer.innerHTML = '';
-//     project.tech.forEach(tech => {
-//         const tag = document.createElement('span');
-//         tag.className = 'tech-tag';
-//         tag.textContent = tech;
-//         techContainer.appendChild(tag);
-//     });
-//
-//     let currentMediaIndex = 0;
-//     let totalMediaItems = 0;
-//
-//     function updateMediaDisplay() {
-//         const mediaItems = document.querySelectorAll('.media-item');
-//         const indicators = document.querySelectorAll('.indicator');
-//
-//         totalMediaItems = mediaItems.length;
-//
-//         mediaItems.forEach((item, index) => {
-//             item.classList.toggle('active', index === currentMediaIndex);
-//         });
-//
-//         indicators.forEach((indicator, index) => {
-//             indicator.classList.toggle('active', index === currentMediaIndex);
-//         });
-//     }
-//
-//     function nextMedia() {
-//         currentMediaIndex = (currentMediaIndex + 1) % totalMediaItems;
-//         updateMediaDisplay();
-//         playSound('click');
-//     }
-//
-//     function previousMedia() {
-//         currentMediaIndex = (currentMediaIndex - 1 + totalMediaItems) % totalMediaItems;
-//         updateMediaDisplay();
-//         playSound('click');
-//     }
-//
-//     function goToMedia(index) {
-//         currentMediaIndex = index;
-//         updateMediaDisplay();
-//         playSound('click');
-//     }
-//
-//     // Add keyboard navigation for media carousel
-//     document.addEventListener('keydown', (e) => {
-//         const modal = document.getElementById('projectModal');
-//         if (modal.style.display === 'block') {
-//             switch(e.key) {
-//                 case 'ArrowLeft':
-//                     previousMedia();
-//                     break;
-//                 case 'ArrowRight':
-//                     nextMedia();
-//                     break;
-//             }
-//         }
-//     });
-//
-//     modal.style.display = 'block';
-//     document.body.style.overflow = 'hidden';
-//     playSound('click');
-// }
-
 // Project modal system with media support
 const projectData = {
     'labyrainth': {
@@ -298,8 +131,18 @@ const projectData = {
         media: [
             { type: 'youtube', url: 'r4BWgZSQWUE', title: 'LabyrAInth Gameplay Trailer' },
             { type: 'youtube', url: 'vm6A02JP5Ec', title: 'Cinematic Story trailer' },
-            { type: 'image', url: 'https://via.placeholder.com/800x450/0099ff/ffffff?text=LabyrAInth+Screenshot+1', title: 'Game Screenshot 1' },
-            { type: 'image', url: 'https://via.placeholder.com/800x450/ff0099/ffffff?text=LabyrAInth+Screenshot+2', title: 'Game Screenshot 2' },
+            { type: 'image', url: 'Assets/PortfolioProjects/LabyrAInth/Walk1.gif', title: 'Walk gif' },
+            { type: 'image', url: 'Assets/PortfolioProjects/LabyrAInth/Run_to_Portal.gif', title: 'Run to Portal gif' },
+            { type: 'image', url: 'Assets/PortfolioProjects/LabyrAInth/Boss.gif', title: 'Aliens gif' },
+            { type: 'image', url: 'Assets/PortfolioProjects/LabyrAInth/VR.gif', title: 'VR gif' },
+            { type: 'image', url: 'Assets/PortfolioProjects/LabyrAInth/Labyrinths.gif', title: 'Labyrinths gif' },
+            { type: 'image', url: 'Assets/PortfolioProjects/LabyrAInth/wep_cust_syst.gif', title: 'Weapon Inventory gif' },
+            { type: 'image', url: 'Assets/PortfolioProjects/LabyrAInth/home_page.png', title: 'Game Screenshots' },
+            { type: 'image', url: 'Assets/PortfolioProjects/LabyrAInth/planet.jpg', title: 'Game Screenshots' },
+            { type: 'image', url: 'Assets/PortfolioProjects/LabyrAInth/explosion.jpg', title: 'Game Screenshots' },
+            { type: 'image', url: 'Assets/PortfolioProjects/LabyrAInth/fire.jpg', title: 'Game Screenshots' },
+            { type: 'image', url: 'Assets/PortfolioProjects/LabyrAInth/damage.jpg', title: 'Game Screenshots' },
+            { type: 'image', url: 'Assets/PortfolioProjects/LabyrAInth/exit_portal.png', title: 'Game Screenshots' },
             { type: 'youtube', url: '5__ul8nHqNU', title: 'Teaser trailer' },
         ],
         tech: ['Unreal Engine 5', 'C++', 'Blueprint', 'VR', 'AI', 'Steam', 'Team management', 'Community management', 'Marketing']
@@ -318,12 +161,21 @@ const projectData = {
 
                 This project was developed as a proof of concept for a potential client, showcasing my ability to create engaging and immersive experiences in the metaverse space.`,
         media: [
-            { type: 'youtube', url: 'dQw4w9WgXcQ', title: 'Metarace Demo' },
-            { type: 'image', url: 'https://onedrive.live.com/?cid=6EB64F2610CBE0AF&sb=name&sd=1&id=6EB64F2610CBE0AF%21s5ad5e43f7ff24ab78a5b5e56b4f02b29&parId=6EB64F2610CBE0AF%21sb84b1dcafa3f47c2a60824b21c006127&o=OneUp', title: 'Metarace Screenshot' },
-            { type: 'image', url: 'https://via.placeholder.com/800x450/00ff88/000000?text=Metarace+Screenshot', title: 'Metarace Screenshot' },
-            { type: 'image', url: 'https://via.placeholder.com/800x450/00ff88/000000?text=Metarace+Screenshot', title: 'Metarace Screenshot' },
-            { type: 'image', url: 'https://via.placeholder.com/800x450/00ff88/000000?text=Metarace+Screenshot', title: 'Metarace Screenshot' },
-            { type: 'image', url: 'https://via.placeholder.com/800x450/00ff88/000000?text=Metarace+Screenshot', title: 'Metarace Screenshot' },
+            { type: 'video', url: 'Assets/PortfolioProjects/Metarace/Horses race.mp4', title: 'Metarace Demo with Horses' },
+            { type: 'video', url: 'Assets/PortfolioProjects/Metarace/Drakes Run.mp4', title: 'Metarace Demo with Drakes' },
+            { type: 'image', url: 'Assets/PortfolioProjects/Metarace/Picture1.png', title: 'Metarace Screenshot' },
+            { type: 'image', url: 'Assets/PortfolioProjects/Metarace/Picture2.png', title: 'Metarace Screenshot' },
+            { type: 'image', url: 'Assets/PortfolioProjects/Metarace/Picture3.png', title: 'Metarace Screenshot' },
+            { type: 'image', url: 'Assets/PortfolioProjects/Metarace/Picture4.png', title: 'Metarace Screenshot' },
+            { type: 'image', url: 'Assets/PortfolioProjects/Metarace/Picture5.png', title: 'Metarace Screenshot' },
+            { type: 'image', url: 'Assets/PortfolioProjects/Metarace/Picture6.png', title: 'Metarace Screenshot' },
+            { type: 'image', url: 'Assets/PortfolioProjects/Metarace/Picture7.png', title: 'Metarace Screenshot' },
+            { type: 'image', url: 'Assets/PortfolioProjects/Metarace/Picture8.png', title: 'Metarace Screenshot' },
+            { type: 'image', url: 'Assets/PortfolioProjects/Metarace/Picture9.png', title: 'Metarace Screenshot' },
+            { type: 'image', url: 'Assets/PortfolioProjects/Metarace/Picture10.png', title: 'Metarace Screenshot' },
+            { type: 'image', url: 'Assets/PortfolioProjects/Metarace/Picture11.png', title: 'Metarace Screenshot' },
+            { type: 'image', url: 'Assets/PortfolioProjects/Metarace/Picture12.png', title: 'Metarace Screenshot' },
+            { type: 'image', url: 'Assets/PortfolioProjects/Metarace/Picture13.png', title: 'Metarace Screenshot' }
         ],
         tech: ['Unreal Engine 5', 'C++', 'OpenXR', 'OculusVR', 'WindowsMR', 'Betting games', 'Web3', 'Cryptocurrencies & NFTs']
     },
@@ -342,9 +194,9 @@ const projectData = {
                 I contributed to the development of the VR features of the metaverse, focusing on user interaction and adapting UI interaction in VR.
                 I also worked on one of the games integrated into the metaverse, a 3D chess games built in Unreal Engine with real time multiplayer matches and a custom chess engine with support for AI opponents.`,
         media: [
-            { type: 'youtube', url: 'dQw4w9WgXcQ', title: 'Metaverse Platform Overview' },
-            { type: 'youtube', url: 'dQw4w9WgXcQ', title: '3D Chess Game Demo' },
-            { type: 'image', url: 'https://via.placeholder.com/800x450/ff8800/ffffff?text=Metaverse+Platform', title: 'Platform Screenshot' }
+            { type: 'video', url: 'Assets/PortfolioProjects/Metaverse/mostraMetaverso.mp4', title: 'Metaverse Lobby Demo view' },
+            { type: 'image', url: 'Assets/PortfolioProjects/Metaverse/Screenshot.png', title: 'Lobby Screenshot' },
+            { type: 'image', url: 'Assets/PortfolioProjects/Metaverse/Screenshot1.png', title: 'Architecture Overview' }
         ],
         tech: ['Unreal Engine 5', 'C++', 'VR', 'Multiplayer Networking', 'Metaverse', 'Web3', 'Chess 3D']
     },
@@ -361,8 +213,10 @@ const projectData = {
                 This project was backed by intensive studies on complex adaptive systems and especially social complex adaptive systems, and how they can be modeled using computational models.
                 The Java application simulates an ant nest where multiple simple AI agents that behave like ants interact with each other and with the environment, creating complex behaviors and emergent patterns not encoded in the system.`,
         media: [
-            { type: 'image', url: 'https://via.placeholder.com/800x450/00ffff/000000?text=Ant+Simulation+UI', title: 'Application Interface' },
-            { type: 'image', url: 'https://via.placeholder.com/800x450/ff00ff/ffffff?text=Data+Visualization', title: 'Data Visualization' }
+            { type: 'video', url: 'Assets/PortfolioProjects/CAS/Registrazione.mp4', title: 'CAS live demo' },
+            { type: 'image', url: 'Assets/PortfolioProjects/CAS/Screenshot1.png', title: 'CAS Schema' },
+            { type: 'image', url: 'Assets/PortfolioProjects/CAS/Screenshot2.png', title: 'CAS properties' },
+            { type: 'image', url: 'Assets/PortfolioProjects/CAS/Screenshot3.png', title: 'The computational model of an ant nest' }
         ],
         tech: ['Java', 'AI', 'UI', 'Emergence', 'Complex Adaptive Systems', 'Data analysis', 'Genetic Algorithms']
     },
@@ -381,9 +235,10 @@ const projectData = {
                 I was responsible for the sound design, the SFX and VFX of the game and for the level design of the dungeons.
                 An italian hospital overlooked the competition between multiple teams and awarded us with a prize for the best game, as it was the most fun and easy to play game for little children with ostomy.`,
         media: [
-            { type: 'youtube', url: 'dQw4w9WgXcQ', title: 'OstoMaze Gameplay' },
-            { type: 'image', url: 'https://via.placeholder.com/800x450/00ff00/000000?text=OstoMaze+Gameplay', title: 'Gameplay Screenshot' },
-            { type: 'image', url: 'https://via.placeholder.com/800x450/ffff00/000000?text=Level+Design', title: 'Level Design' }
+            { type: 'video', url: 'Assets/PortfolioProjects/OstoMaze/Registrazione.mp4', title: 'OstoMaze demo gameplay' },
+            { type: 'image', url: 'Assets/PortfolioProjects/OstoMaze/logo.png', title: 'OstoMaze logo' },
+            { type: 'image', url: 'Assets/PortfolioProjects/OstoMaze/Picture1.png', title: 'OstoMaze lobby' },
+            { type: 'image', url: 'Assets/PortfolioProjects/OstoMaze/Picture2.png', title: 'OstoMaze maze dungeon' }
         ],
         tech: ['Unity', 'C#', '2D Game Development', 'Pixelart', 'Sound Design', 'Level Design', 'Educational Games', 'Gamification']
     },
@@ -469,6 +324,17 @@ function createMediaElement(item, index) {
             </div>
         `;
     }
+    else if (item.type === 'video') {
+        return `
+            <div class="media-item ${index === 0 ? 'active' : ''}" data-index="${index}">
+                <video controls>
+                    <source src="${item.url}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="media-title">${item.title}</p>
+            </div>
+        `;
+    }
     return '';
 }
 
@@ -540,7 +406,7 @@ window.addEventListener('click', (e) => {
 // Skill level up system
 function levelUpSkill(skillNode, currentLevel) {
     const progressBar = skillNode.querySelector('.skill-progress');
-    const newLevel = Math.min(currentLevel + 5, 100);
+    const newLevel = Math.min(currentLevel + 10, 100);
 
     progressBar.style.width = newLevel + '%';
 
@@ -622,7 +488,7 @@ function triggerEasterEgg(eggId) {
     event.target.style.display = 'none';
 
     // Special reward for finding all easter eggs
-    if (easterEggsFound >= 3) {
+    if (easterEggsFound >= 5) {
         setTimeout(() => {
             showNotification("🏆 Master Explorer! You found all easter eggs! Here's a bonus animation!");
             triggerBonusAnimation();
@@ -689,7 +555,7 @@ function triggerBonusAnimation() {
 
 // Boss battle system
 function damageBoss() {
-    bossHealth -= 33;
+    bossHealth -= 20;
     if (bossHealth < 0) bossHealth = 0;
 
     const healthBar = document.getElementById('bossHealth');
@@ -715,6 +581,10 @@ function damageBoss() {
 // Add hover effects to interactive elements
 document.addEventListener('DOMContentLoaded', () => {
     // Add hover sound to project cards
+    document.querySelectorAll('.main-project-card').forEach(card => {
+        card.addEventListener('mouseenter', () => playSound('hover'));
+    });
+
     document.querySelectorAll('.project-card').forEach(card => {
         card.addEventListener('mouseenter', () => playSound('hover'));
     });
