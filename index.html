@@ -57,7 +57,7 @@
             In my work life I have also covered the roles of Android mobile developer and web developer.
         </p>
         <p>
-            I love games in general, from social ones, to table top games to video games. Also passionate about technology, physics, maths, cars, motorsport, and nature.
+            I love games in general, from social ones, to tabl-top games to video games. Also, passionate about technology, physics, maths, cars, motorsport, and nature.
             Currently leading the development of LabyrAInth, a game I invented and directed with the help of other twelve colleagues.
         </p>
     </div>
@@ -66,84 +66,89 @@
 <!-- Projects Section -->
 <section class="section" id="projects">
     <h2 class="section-title">Level 2: Game Projects</h2>
-    <div class="projects-grid">
-        <div class="project-card" onclick="openModal('labyrainth')">
-            <h3 class="project-title">LabyrAInth</h3>
-            <p class="project-description">
-                My main game project that I directed from start to finish.
-                A scifi fps arcade maze runner game to play in VR or on PC, with online leaderboards and various game modes.
-                Now on Steam!
-            </p>
-            <div class="project-tech">
-                <span class="tech-tag">Unreal Engine 5</span>
-                <span class="tech-tag">C++</span>
-                <span class="tech-tag">VR</span>
-                <span class="tech-tag">AI</span>
+    <div class="projects-section-custom">
+
+        <!-- Main Project Card -->
+        <div class="main-project-card" onclick="openModal('labyrainth')"
+             style="background-image: url('Assets/PortfolioProjects/LabyrAInth/Run_to_Portal.gif');">
+            <div class="main-card-overlay">
+                <h3 class="project-title">LabyrAInth</h3>
+                <p class="project-description">
+                    My main game project that I directed from start to finish.
+                    A scifi FPS arcade maze runner game for VR and PC with online leaderboards.
+                    Now on Steam!
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Unreal Engine 5</span>
+                    <span class="tech-tag">C++</span>
+                    <span class="tech-tag">VR</span>
+                    <span class="tech-tag">AI</span>
+                </div>
             </div>
         </div>
 
-        <div class="project-card" onclick="openModal('metarace')">
-            <h3 class="project-title">Metarace</h3>
-            <p class="project-description">
-                Ever wanted to watch horse races while riding a horse in VR?
-            </p>
-            <div class="project-tech">
-                <span class="tech-tag">Unreal Engine 5</span>
-                <span class="tech-tag">C++</span>
-                <span class="tech-tag">VR</span>
-                <span class="tech-tag">Crypto & NFTs</span>
+        <!-- Sub Projects Grid -->
+        <div class="sub-projects-grid">
+            <div class="project-card project-card-bg" onclick="openModal('metarace')"
+                 style="background-image: url('Assets/PortfolioProjects/Metarace/Picture5.png');">
+                <div class="card-overlay">
+                    <h3 class="project-title">Metarace</h3>
+                    <p class="project-description">Ever wanted to watch horse races while riding a horse in VR?</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Unreal Engine 5</span>
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">VR</span>
+                        <span class="tech-tag">Crypto & NFTs</span>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="project-card" onclick="openModal('metaverse')">
-            <h3 class="project-title">Metaverse Platform</h3>
-            <p class="project-description">
-                Contributing on the development of an ambitious metaverse projects where multiple 3D and VR games connect through a unified backend framework.
-            </p>
-            <div class="project-tech">
-                <span class="tech-tag">Unreal Engine 5</span>
-                <span class="tech-tag">C++</span>
-                <span class="tech-tag">VR</span>
-                <span class="tech-tag">Metaverse</span>
+            <div class="project-card" onclick="openModal('metaverse')"
+                style="background-image: url('Assets/PortfolioProjects/Metaverse/Screenshot1.png');">
+                <div class="project-card-overlay">
+                    <h3 class="project-title">Metaverse Platform</h3>
+                    <p class="project-description">
+                        Contributing on the development of an ambitious metaverse projects where multiple 3D and VR games connect through a unified backend framework.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Unreal Engine 5</span>
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">VR</span>
+                        <span class="tech-tag">Metaverse</span>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="project-card" onclick="openModal('complex-adaptive-system')">
-            <h3 class="project-title">Complex Adaptive System</h3>
-            <p class="project-description">
-                A computational model of a complex adaptive system, simulating the interactions of multiple AI agents to behave like ants in a nest to study emergent behaviours.
-            </p>
-            <div class="project-tech">
-                <span class="tech-tag">Java</span>
-                <span class="tech-tag">Computational Models</span>
-                <span class="tech-tag">AI</span>
-                <span class="tech-tag">Emergence</span>
+            <div class="project-card" onclick="openModal('complex-adaptive-system')"
+                style="background-image: url('Assets/PortfolioProjects/CAS/Screenshot3.png');">
+                <div class="project-card-overlay">
+                    <h3 class="project-title">Complex Adaptive System</h3>
+                    <p class="project-description">
+                        A computational model of a complex adaptive system, simulating the interactions of multiple AI agents to behave like ants in a nest to study emergent behaviours.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Computational Models</span>
+                        <span class="tech-tag">AI</span>
+                        <span class="tech-tag">Emergence</span>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="project-card" onclick="openModal('ostomaze')">
-            <h3 class="project-title">OstoMaze</h3>
-            <p class="project-description">
-                A simple cartoonist dungeon crawler in Unity, made to help children with ostomy to understand their condition through a fun and engaging game.
-            </p>
-            <div class="project-tech">
-                <span class="tech-tag">Unity</span>
-                <span class="tech-tag">C#</span>
-                <span class="tech-tag">Gamification</span>
-                <span class="tech-tag">2D</span>
-            </div>
-        </div>
-
-        <div class="project-card" onclick="openModal('web-portfolio')">
-            <h3 class="project-title">Interactive Portfolio</h3>
-            <p class="project-description">
-                This very portfolio you're viewing - a gamified web experience with interactive elements and responsive design.
-            </p>
-            <div class="project-tech">
-                <span class="tech-tag">HTML5</span>
-                <span class="tech-tag">CSS3</span>
-                <span class="tech-tag">JavaScript</span>
-                <span class="tech-tag">Gamification</span>
+            <div class="project-card" onclick="openModal('ostomaze')"
+                style="background-image: url('Assets/PortfolioProjects/OstoMaze/Picture2.png');">
+                <div class="project-card-overlay">
+                    <h3 class="project-title">OstoMaze</h3>
+                    <p class="project-description">
+                        A simple cartoonist dungeon crawler in Unity, made to help children with ostomy to understand their condition through a fun and engaging game.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Unity</span>
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">Gamification</span>
+                        <span class="tech-tag">2D</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -216,10 +221,10 @@
         </p>
         <div class="contact-buttons">
             <a href="mailto:pdondiw@gmail.com" class="contact-btn" onclick="damageBoss()">📧 Email Shoot</a>
-            <a href="https://www.linkedin.com/in/pietro-dondi-53a437202/" class="contact-btn" onclick="damageboss()" target="_blank">💼 LinkedIn Strike</a>
-            <a href="https://github.com/PieMH" class="contact-btn" onclick="damageaBoss()" target="_blank">💻 GitHub Combo</a>
-            <a href="https://bold.pro/my/pietro-dondi-online-resume/349r" class="contact-btn" onclick="damageaBoss()" target="_blank">📜 Online Resume Recharge</a>
-            <a href="https://store.steampowered.com/app/3672600/LabyrAInth/" class="contact-btn" onclick="damageaBoss()" target="_blank">🎮 Steam Attack</a>
+            <a href="https://www.linkedin.com/in/pietro-dondi-53a437202/" class="contact-btn" onclick="damageBoss()" target="_blank">💼 LinkedIn Strike</a>
+            <a href="https://github.com/PieMH" class="contact-btn" onclick="damageBoss()" target="_blank">💻 GitHub Combo</a>
+            <a href="https://bold.pro/my/pietro-dondi-online-resume/349r" class="contact-btn" onclick="damageBoss()" target="_blank">📜 Online Resume Recharge</a>
+            <a href="https://store.steampowered.com/app/3672600/LabyrAInth/" class="contact-btn" onclick="damageBoss()" target="_blank">🎮 Steam Attack</a>
         </div>
     </div>
 </section>
