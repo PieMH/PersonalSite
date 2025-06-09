@@ -348,11 +348,29 @@ function updateMediaDisplay() {
     totalMediaItems = mediaItems.length;
 
     mediaItems.forEach((item, index) => {
-        item.classList.toggle('active', index === currentMediaIndex);
+        if (index === currentMediaIndex) {
+            item.classList.add('active');
+        } else {
+            // Pause any video in the inactive item
+            const video = item.querySelector('video');
+            if (video) {
+                video.pause();
+            }
+            item.classList.remove('active');
+        }
     });
 
     indicators.forEach((indicator, index) => {
-        indicator.classList.toggle('active', index === currentMediaIndex);
+        if (index === currentMediaIndex) {
+            indicator.classList.add('active');
+        } else {
+            // Pause any video in the inactive item
+            const video = indicator.querySelector('video');
+            if (video) {
+                video.pause();
+            }
+            indicator.classList.remove('active');
+        }
     });
 }
 
@@ -390,9 +408,18 @@ document.addEventListener('keydown', (e) => {
 });
 
 function closeModal() {
-    document.getElementById('projectModal').style.display = 'none';
     document.body.style.overflow = 'auto';
     playSound('click');
+
+    const modal = document.getElementById('projectModal');
+    modal.style.display = 'none';
+
+    // Stop all playing videos
+    const videos = modal.querySelectorAll('video');
+    videos.forEach(video => {
+        video.pause();
+        video.currentTime = 0;
+    });
 }
 
 // Close modal when clicking outside

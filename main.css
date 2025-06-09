@@ -362,6 +362,13 @@ body {
     gap: 10px;
 }
 
+#modalTech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
 .tech-tag {
     background: rgba(0,255,255,0.2);
     color: var(--primary-color);
@@ -369,6 +376,7 @@ body {
     border-radius: 20px;
     font-size: 0.9rem;
     border: 1px solid var(--primary-color);
+    margin: 2px;
 }
 
 /* Modal */
@@ -496,6 +504,15 @@ body {
     box-shadow: var(--glow) var(--primary-color);
 }
 
+.media-item video {
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
+    border-radius: 8px;
+    border: 2px solid var(--primary-color);
+    box-shadow: var(--glow) var(--primary-color);
+}
+
 .media-title {
     color: var(--text-gray);
     font-size: 0.9rem;
@@ -545,6 +562,7 @@ body {
     display: flex;
     gap: 8px;
     z-index: 10;
+    cursor: default;
 }
 
 .indicator {
